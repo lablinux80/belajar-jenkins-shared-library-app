@@ -5,7 +5,7 @@ import lablinux80.jenkins.Output;
 pipeline {
 	agent any
 	stages {
-		stage ("library Resource") {
+		stage ("Library Resource") {
 			steps {
 				script {
 					def config = libraryResource("config/build.json")
