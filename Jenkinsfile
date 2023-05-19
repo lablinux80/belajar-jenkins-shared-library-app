@@ -6,14 +6,13 @@ pipeline {
 	agent any
 	stages {
 		stage ("Global Variable") {
-			steps {
-				script {
-//                  Output.hello (this, "Groovy")
-					echo(author.name())
-					echo(author.channel())
-				}
-			}
-		}
+//			steps {
+//				script {
+//					echo(author.name())
+//					echo(author.channel())
+//				}
+//			}
+//		}
 		stage ("Hello Groovy") {
 			steps {
 				script {
