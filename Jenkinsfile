@@ -5,6 +5,16 @@ import lablinux80.jenkins.Output;
 pipeline {
 	agent any
 	stages {
+		stage ("Hello Person") {
+			steps {
+				script {
+					hello.person([
+					        firstName: "Alaric",
+							lastName: "Gwyneth"
+					])
+				}
+			}
+		}
 		stage ("Maven Build") {
 			steps {
 				script {
