@@ -1,6 +1,6 @@
 @Library("belajar-jenkins-shared-library@main") _
 
-import lablinux80.jenkins.Output
+import lablinux80.jenkins.Output;
 
 pipeline {
 	agent any
