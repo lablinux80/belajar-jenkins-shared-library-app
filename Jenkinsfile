@@ -1,5 +1,32 @@
 @Library("belajar-jenkins-shared-library@main") _
 
-pznPipeline([
-    type: "maven"
-])
+import lablinux.jenkins.Output
+
+pipeline {
+	agent any
+	stages {
+		stage ("Global Variable") {
+			steps {
+				script {
+//                  Output.hello (this, "Groovy")
+					echo(author.name())
+					echo(author.channel())
+				}
+			}
+		}
+		stage ("Hello Groovy") {
+			steps {
+				script {
+					Output.hello (this, "Groovy")
+				}
+			}
+		}
+		stage ("Hello World") {
+			steps {
+				script {
+					hello.world ()
+				}
+			}
+		}
+	}
+}
