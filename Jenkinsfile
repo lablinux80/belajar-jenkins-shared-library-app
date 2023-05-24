@@ -1,7 +1,7 @@
 @Library("belajar-jenkins-shared-library@main") _
 
 BackEndPipeline([
-        type: "maven"
+        type: "eat"
 ])
 
 //pipeline {
