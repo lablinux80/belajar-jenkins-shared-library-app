@@ -1,6 +1,8 @@
 @Library("belajar-jenkins-shared-library@main") _
 
-mavenPipeline()
+BackEndPipeline([
+        type: "maven"
+])
 
 //pipeline {
 //	agent any
